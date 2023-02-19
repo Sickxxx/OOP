@@ -1,23 +1,17 @@
 package Lesson_01.HomeWork;
 
 public class Person {
-    private int age;
-    private String name;
 
-    private String status;
-
-    public Person(String name, int age){
-        this.name = name;
+    private String fullName;
+    public Person(String fullName) {
+        this.fullName = fullName;
     }
-    public String getStatus() {
-        return status;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
     @Override
-    public String toString(){
-        return name;
+    public String toString() {
+        return fullName;
     }
 }

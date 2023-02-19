@@ -1,15 +1,21 @@
 package Lesson_01.HomeWork;
 
 public class Main {
-    static Person father;
-    static Person mother;
-    static Person son;
 
     public static void main(String[] args) {
-        father = new Person("Homer",45);
-        mother = new Person("Marge", 40);
-        son = new Person("Bart", 12);
-        Relations var = new Relations();
-        var.relShow(father,mother);
+        Person ivan = new Person("Иван");
+        Person mariya = new Person("Мария");
+        Person sergey = new Person("Сергей");
+        Person anna = new Person("Анна");
+        Person alex = new Person("Алексей");
+
+        GeoTree gt = new GeoTree();
+        gt.appendSpouses(ivan, mariya);
+        gt.appendChild(ivan, sergey);
+        gt.appendChild(mariya, sergey);
+        gt.appendSpouses(sergey, anna);
+        gt.appendChild(sergey,alex);
+        gt.appendChild(anna,alex);
+        System.out.println(new Search(gt).find(anna, Relations.SPOUSES));
     }
 }
