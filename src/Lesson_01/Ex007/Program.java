@@ -9,11 +9,12 @@ public class Program {
       
         // #region ex1 Demo
 
-        // BaseHero hero3 = new Magician();
-        // System.out.println(hero3.getInfo());
+         BaseHero hero3 = new Magician();
+         BaseHero hero4 = new BaseHero("kek",2);
+         System.out.println(hero3.getInfo());
 
-        // BaseHero hero4 = new Priest();
-        // System.out.println(hero4.getInfo());
+         BaseHero hero5 = new Priest();
+         System.out.println(hero5.getInfo());
 
         // #endregion
 

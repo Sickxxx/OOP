@@ -1,6 +1,6 @@
 package Lesson_01.Ex003;
 
-public class Program {
+public class   Program {
 
     public static void main(String[] args) {
         Point2D a = new Point2D(0, 2);

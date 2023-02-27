@@ -27,7 +27,6 @@ public class Program {
 
         // // #endregion
 
-        System.out.println();
         // #endregion
 
         // #region Robo2 demo
@@ -46,15 +45,19 @@ public class Program {
 
         //#region Robo3 demo
 
-        Robot3 robot3 = new Robot3("name_3");
+        Robot3 robot1 = new Robot3("name_3");
+        Robot3 robot2 = new Robot3("1");
+        Robot3 robot3 = new Robot3("1");
         System.out.println("-------------");
+        System.out.println(robot1);
+        System.out.println(robot2);
         System.out.println(robot3);
-        robot3.power();
-        robot3.work();
-        robot3.power();
-        robot3.work();
-
-        robot3.power();
+//        robot3.power();
+//        robot3.work();
+//        robot3.power();
+//        robot3.work();
+//
+//        robot3.power();
         
         //#endregion
     }

@@ -1,14 +1,15 @@
 package Lesson_01.Ex003;
 
 
-/** 
+/**
  * Это точка 2D
-*/
+ */
 public class Point2D {
     private int x, y; // Это координата х и у
 
     /**
      * Это конструктор ...
+     *
      * @param valueX это координата Х
      * @param valueY это координата Y
      */
@@ -24,26 +25,26 @@ public class Point2D {
         this(0);
     }
 
-    public int getX(){
+    public int getX() {
         return x;
     }
-
-    public int getY(){
+    public int getY() {
         return y;
     }
-    
-    public void setX(int value){
+
+    public void setX(int value) {
         this.x = value;
     }
 
-    public void setY(int value){
+    public void setY(int value) {
         this.y = value;
     }
 
-    
-    private String getInfo(){
+
+    private String getInfo() {
         return String.format("x: %d; y: %d", x, y);
     }
+
     @Override
     public String toString() {
         return getInfo();
